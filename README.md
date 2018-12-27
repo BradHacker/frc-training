@@ -38,12 +38,11 @@ Welcome to FRC Team 5546's Java training bootcamp. If you already have the corre
 
 ## Getting Familiar
 
-Open the `frc-training` folder (or whatever folder you cloned this repo into) in VSCode.
+If the `frc-training` folder isn't open in VSCode already, then open it by first opening VSCode and then going to File > Open Folder
 
-**Windows Users:** should be in <pre>C:/Users/<b>username</b>/Documents/FRC 2019</pre>
+**Windows Users:** should be in `C:/Users/%USERNAME%/Documents`
 
-**Mac Users:** should be in
-<pre>~/FRC 2019/</pre>
+**Mac Users:** should be in `~/`
 
 In order to get familiar with the FRC Java programming environemnt, we are going to take a look at some files.
 
