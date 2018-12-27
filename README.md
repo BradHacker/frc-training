@@ -30,9 +30,9 @@ Go to [Oracle's Java Downloads](https://www.oracle.com/technetwork/java/javase/d
 
 Run the `.exe` file that you downloaded based on your architecture (`x86` or `x64`). All of the defualt installer options should be fine.
 
-Open **Control Panel** and go to **System**. Then click on **Advanced system settings** and click the **Environment variables** button. Find the `PATH` variable under *System Variables* (most likely the bottom list) and edit it. Add the location of the `bin` folder to the path variable (*e.g. `C:/Program Files/Java/jdk1.8.0_191/bin`*). 
+Open **Control Panel** and go to **System**. Then click on **Advanced system settings** and click the **Environment variables** button. Find the `PATH` variable under *System Variables* (most likely the bottom list) and edit it. Add the location of the `bin` folder to the path variable (*e.g. `C:/Program Files/Java/jdk1.8.0_191/bin`*).
 
-**For Windows 10 users**, when editing the `PATH` variable, it may list each item in a table. If so, just add the file path to the next blank cell and hit okay. 
+**For Windows 10 users**, when editing the `PATH` variable, it may list each item in a table. If so, just add the file path to the next blank cell and hit okay.
 
 **For Windows 8/8.1 users**, when editing the `PATH` variable, it may show as one long line of text. If so, just add a `;` (*semicolon*) at the end, then put the path to the `bin` folder after.
 
@@ -44,7 +44,7 @@ Run the downloaded `.dmg` file and then double-click the `.pkg` icon that is in 
 
 ### Installing VSCode
 
-To install VSCode, go to https://code.visualstudio.com/download and download the version for your operating system. Follow the installer and move on once you see something similar to the image below.
+[Download](https://code.visualstudio.com/download) the version for your operating system. Follow the installer and move on once you see something similar to the image below.
 
 ![VSCode Startup](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/763/331/original/020708a2-bf93-4a74-9430-1d452d1f6833.png?1532302727)
 
@@ -63,7 +63,6 @@ Download the [WPILib v2019.0.0-alpha-4](https://github.com/wpilibsuite/vscode-wp
 To install the WPILib Extension go to the VSCode Extensions tab and 1) click the **... button** above the search bar, then 2) click **"Install from VSIX..."**. Then select the `.vsix` file frem the previous step and click install. After it loads, press the **reload** button.
 
 ![Installing WPILib Extension](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/763/329/original/f4862dc3-f586-42ca-b440-37de3eaf83a5.png?1532302173)
-
 
 ## How To Continue
 
