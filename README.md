@@ -26,8 +26,6 @@ Welcome to FRC Team 5546's Java training bootcamp. If you already have the corre
         5. [end()](#end)
         6. [interrupted()](#interrupted)
 2. [How To Continue](#how-to-continue)
-    1. [Windows](#windows)
-    2. [Mac](#mac)
 
 ## Prerequisites
 
@@ -102,14 +100,10 @@ THis method is called when the command is interrupted. This should cancel any ac
 
 ## How To Continue
 
-### Windows
+In VSCode, open the command prompt/terminal (**Windows:** press `Ctrl+~` or **Mac:** `Cmd+~`).
 
-```batch
-git checkout lesson2
-```
+To continue the lessons, run the following command:
 
-### Mac
-
-```bash
+```shell
 git checkout lesson2
 ```
