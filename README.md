@@ -14,6 +14,7 @@ Welcome to FRC Team 5546's Java training bootcamp. If you already have the corre
 2. [Getting Started](#getting-started)
     1. [Installing Java](#installing-java-openjdk-8)
     2. [Installing VSCode](#installing-vscode)
+    3. [Installing Git](#installing-git)
 3. [How To Continue](#how-to-continue)
 
 ## Prerequisites
@@ -64,8 +65,18 @@ To install the WPILib Extension go to the VSCode Extensions tab and 1) click the
 
 ![Installing WPILib Extension](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/763/329/original/f4862dc3-f586-42ca-b440-37de3eaf83a5.png?1532302173)
 
+### Installing Git
+
+[Download Git](https://git-scm.com/downloads) and run the installer. All of the defualt options should be fine.
+
 ## How To Continue
 
 In VSCode, open the powershell/terminal (**Windows:** press `Ctrl+~` or **Mac:** `Cmd+~`).
 
-To continue the lessons, run the command `git checkout lesson1`.
+To continue the lessons, run the following commands:
+
+```bash
+cd ~
+git clone https://github.com/bradhacker/frc-training.git
+git checkout lesson1
+```
