@@ -66,4 +66,6 @@ To install the WPILib Extension go to the VSCode Extensions tab and 1) click the
 
 ## How To Continue
 
-To continue the lessons, run `git checkout lesson1`
+In VSCode, open the powershell/terminal (**Windows:** press `Ctrl+~` or **Mac:** `Cmd+~`).
+
+To continue the lessons, run the command `git checkout lesson1`.
