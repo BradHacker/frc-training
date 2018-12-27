@@ -71,12 +71,15 @@ To install the WPILib Extension go to the VSCode Extensions tab and 1) click the
 
 ## How To Continue
 
-In VSCode, open the powershell/terminal (**Windows:** press `Ctrl+~` or **Mac:** `Cmd+~`).
+In VSCode, open the command prompt/terminal (**Windows:** press `Ctrl+~` or **Mac:** `Cmd+~`).
 
 To continue the lessons, run the following commands:
 
-```bash
-cd ~
+```shell
+**Windows:** cd C:/Users/%USERNAME%/Documents
+**Mac:** cd ~
 git clone https://github.com/bradhacker/frc-training.git
+cd frc-training
 git checkout lesson1
+code ./
 ```
