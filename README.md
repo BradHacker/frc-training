@@ -8,23 +8,24 @@ Welcome to FRC Team 5546's Java training bootcamp. If you already have the corre
 
 | VSCode Version | WPILib Extension Version | JDK Version |
 | :------------: | :----------------------: | :---------: |
-| 1.30.1         | alpha 4                  | OpenJDK 8   |
+|     1.30.1     |         alpha 4          |  OpenJDK 8  |
 
 ## Table Of Contents - Lesson 1
 
 1. [Getting Familiar](#getting-familiar)
-    1. [Robot.java](#robot.java)
-        1. [robotInit() and robotPeriodic()](#robotinit-and-robotperiodic)
-        2. [Other init() and periodic() methods](#other-init-and-periodic-methods)
-    2. [OI.java](#oi.java)
-    3. [RobotMap.java](#robotmap.java)
-    4. [ExampleCommand.java](#examplecommand.java)
-        1. [Constructor](#constructor)
-        2. [initialize()](#initialize)
-        3. [execute()](#execute)
-        4. [isFinished()](#isfinished)
-        5. [end()](#end)
-        6. [interrupted()](#interrupted)
+   1. [Robot.java](#robot.java)
+      1. [robotInit() and robotPeriodic()](#robotinit-and-robotperiodic)
+      2. [Other init() and periodic() methods](#other-init-and-periodic-methods)
+   2. [OI.java](#oi.java)
+   3. [RobotMap.java](#robotmap.java)
+   4. [commands/ExampleCommand.java](#commandsexamplecommand.java)
+      1. [Constructor](#constructor)
+      2. [initialize()](#initialize)
+      3. [execute()](#execute)
+      4. [isFinished()](#isfinished)
+      5. [end()](#end)
+      6. [interrupted()](#interrupted)
+   5. [subsystems/ExampleSubsystem.java](#subsystemsexamplesubsystem.java)
 2. [How To Continue](#how-to-continue)
 
 ## Prerequisites
@@ -54,11 +55,11 @@ The [Robot](./src/main/java/frc/robot/Robot.java) class contians the main code t
 
 #### Other init() and periodic() methods
 
-All other *mode***Init()** and *mode***Periodic()** functions are called once when the *mode* is enabled and periodically when the *mode* is enabled respectively.
+All other \*mode**\*Init()** and \*mode**\*Periodic()** functions are called once when the _mode_ is enabled and periodically when the _mode_ is enabled respectively.
 
 ### OI.java
 
-This class is where we define all of the interfaces with our Driver Station (*i.e. Joysticks, Buttons, etc.*). We also bind commands with button events like `.whenPressed` and `.whileHeld`.
+This class is where we define all of the interfaces with our Driver Station (_i.e. Joysticks, Buttons, etc._). We also bind commands with button events like `.whenPressed` and `.whileHeld`.
 
 ### RobotMap.java
 
@@ -66,9 +67,9 @@ This class contains all **constants** which means all variables should be define
 
 <pre>public static final int <em>VARIABLE_NAME</em></pre>
 
-These variables are the port numbers for all electronic interfaces on the roboRio (*e.g. `public static final int LEFT_MOTOR = 1`*).
+These variables are the port numbers for all electronic interfaces on the roboRio (_e.g. `public static final int LEFT_MOTOR = 1`_).
 
-### ExampleCommand.java
+### commands/ExampleCommand.java
 
 #### Constructor
 
@@ -97,6 +98,14 @@ This method will run immediately after `isFinished()` returns `true`.
 #### interrupted()
 
 THis method is called when the command is interrupted. This should cancel any actions being done by the command to prevent unintended actions.
+
+### subsystems/ExampleSubSystem.java
+
+This is a subsystem. These are direct interfaces with the outputs of your robot. For example, you would have a `DriveTrain` subsystem that directly controls your motors.
+
+#### initDefaultCommand()
+
+This should contain a call to `setDefaultCommand(...)` that contains a command which will be called periodically throughout operation. Going with the `DriveTrain` example, this should contain `setDefaultCommand(new Drive())`. `Drive()` would be a command that maps the joystick values to a method contained in the `DriveTrain` class.
 
 ## How To Continue
 
