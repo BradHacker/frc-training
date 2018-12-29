@@ -11,6 +11,9 @@ Welcome to FRC Team 5546's Java training bootcamp. If you already have the corre
 ## Table Of Contents - Lesson 1
 
 1. [First Things First](#first-things-first)
+   1. [RobotMap](#robotmap)
+   2. [OI](#oi)
+   3. [Robot](#robot)
 2. [How To Continue](#how-to-continue)
 
 ## Prerequisites
@@ -26,6 +29,8 @@ First, let's create a basic robot program that has a drive train and can be cont
 Open [RobotMap.java](./src/main/java/frc/robot/RobotMap.java) and add the left and right motor ports.
 
 ```java
+...
+
 public class RobotMap {
     public static final int LEFT_MOTOR = 1;
     public static final int RIGHT_MOTOR = 2;
@@ -33,6 +38,39 @@ public class RobotMap {
 ```
 
 Now add `LEFT_STICK` with the value `0` and `RIGHT_STICK` with the value `1` in the same way you did above.
+
+### OI
+
+Open [OI.java](./src/main/java/frc/robot/OI.java) and begin by adding the left and right sticks.
+
+```java
+...
+import edu.wpi.first.wpilibj.Joystick;
+import frc.robot.RobotMap;
+
+public class OI {
+    public Joystick leftStick = new Joystick(RobotMap.LEFT_STICK);
+    public Joystick rightStick = new Joystick(RobotMap.RIGHT_STICK);
+}
+```
+
+### Robot
+
+Open [Robot.java](./src/main/java/frc/robot/Robot.java) and instantiate the OI.
+
+```java
+...
+import frc.robot.OI;
+
+public class Robot extends TimedRobot {
+  public static OI oi;
+
+  @Override
+  public void robotInit() {
+      oi = new OI();
+  }
+}
+```
 
 ## How To Continue
 
