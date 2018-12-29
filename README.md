@@ -10,69 +10,69 @@ Welcome to FRC Team 5546's Java training bootcamp. If you already have the corre
 
 ## Table Of Contents - Lesson 1
 
-1. [First Things First](#first-things-first)
-   1. [RobotMap](#robotmap)
-   2. [OI](#oi)
-   3. [Robot](#robot)
+1. [Your First Subsystem](#your-first-subsystem)
+   1. [DriveTrain](#drivetrain)
+   2. [Motor Controllers](#motor-controllers)
 2. [How To Continue](#how-to-continue)
 
 ## Prerequisites
 
-- Read [Lesson 1](https://github.com/bradhacker/frc-training/tree/lesson1)
+- Read and Complete [Lesson 2](https://github.com/bradhacker/frc-training/tree/lesson1)
+  - RobotMap.java
+  - OI.java
+  - Robot.java
 
-## First Things First
+## Your First Subsystem
 
-First, let's create a basic robot program that has a drive train and can be controlled via tank drive (two joysticks, one controls left, one controls right).
+Well, this is it, your first subsystem. Can you guess what it'll be? That's right, we will be making a `DriveTrain`. This will control the wheels via input from our two joysticks.
 
-### RobotMap
+### DriveTrain
 
-Open [RobotMap.java](./src/main/java/frc/robot/RobotMap.java) and add the left and right motor ports.
+Create a new file in the `subsystems` folder called `DriveTrain.java`. In it, define the `DriveTrain` class as follows:
 
 ```java
-...
+package frc.robot.subsystems;
 
-public class RobotMap {
-    public static final int LEFT_MOTOR = 1;
-    public static final int RIGHT_MOTOR = 2;
+import edu.wpi.first.wpilibj.command.Subsystem;
+
+public class DriveTrain extends Subsytem {
+    public DriveTrain() {
+    }
+
+    @Override
+    public void initDefaultCommand() {
+    }
 }
 ```
 
-Now add `LEFT_STICK` with the value `0` and `RIGHT_STICK` with the value `1` in the same way you did above.
+### Motor Controllers
 
-### OI
-
-Open [OI.java](./src/main/java/frc/robot/OI.java) and begin by adding the left and right sticks.
+Now we will define some motors. But, our program can't just talk directly to our motors, so we use [motor controllers](https://wpilib.screenstepslive.com/s/currentCS/m/getting_started/l/599672-frc-control-system-hardware-overview#motor_controllers). These use [PWM](https://en.wikipedia.org/wiki/Pulse-width_modulation) to control the speed/direction of our motors. We will be using [VictorSP](https://www.vexrobotics.com/217-9090.html) motor controllers. So now we will define our left and right motor controllers:
 
 ```java
 ...
-import edu.wpi.first.wpilibj.Joystick;
+import edu.wpi.first.wpilibj.VictorSP;
 import frc.robot.RobotMap;
 
-public class OI {
-    public Joystick leftStick = new Joystick(RobotMap.LEFT_STICK);
-    public Joystick rightStick = new Joystick(RobotMap.RIGHT_STICK);
-}
-```
+public class DriveTrain extends Subsytem {
+    private VictorSP leftSP, rightSP;
 
-### Robot
-
-Open [Robot.java](./src/main/java/frc/robot/Robot.java) and instantiate the OI.
-
-```java
-...
-import frc.robot.OI;
-
-public class Robot extends TimedRobot {
-  public static OI oi;
-
-  @Override
-  public void robotInit() {
-      oi = new OI();
-  }
-}
+    public DriveTrain() {
+        leftSP = new VictorSP(RobotMap.LEFT_MOTOR);
+        rightSP = new VictorSP(RobotMap.RIGHT_MOTOR);
+    }
+    ...
 ```
 
 ## How To Continue
+
+**Before moving on the next lesson, please ensure your code builds without error. If you are having issues please refollow each step or email me (Bradley Harker) for assistance.**
+
+**To Ensure Your Code Builds:**
+
+In VSCode, open WPILib command palette by clicking on the _red circle with the letter "w" in it_ that is located in the _upper right hand side of the VSCode window_. Then click the option that says `WPILib: Build Robot Code`.
+
+If the console window says `BUILD SUCCESSFUL in Xs` where `X` is a number, then you may continue. If not, please refollow each step or email me (Bradley Harker) for assistance.
 
 In VSCode, open the command prompt/terminal (**Windows:** press `Ctrl+~` or **Mac:** `Cmd+~`).
 
