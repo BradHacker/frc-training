@@ -18,14 +18,15 @@ Welcome to FRC Team 5546's Java training bootcamp. If you already have the corre
       2. [Other init() and periodic() methods](#other-init-and-periodic-methods)
    2. [OI.java](#oi.java)
    3. [RobotMap.java](#robotmap.java)
-   4. [commands/ExampleCommand.java](#commandsexamplecommand.java)
+   4. [commands/ExampleCommand.java](#commandsexamplecommandjava)
       1. [Constructor](#constructor)
       2. [initialize()](#initialize)
       3. [execute()](#execute)
       4. [isFinished()](#isfinished)
       5. [end()](#end)
       6. [interrupted()](#interrupted)
-   5. [subsystems/ExampleSubsystem.java](#subsystemsexamplesubsystem.java)
+   5. [subsystems/ExampleSubsystem.java](#subsystemsexamplesubsystemjava)
+      1. [initDefaultCommand()](#initdefaultcommand)
 2. [How To Continue](#how-to-continue)
 
 ## Prerequisites
