@@ -74,6 +74,14 @@ public class Robot extends TimedRobot {
 
 ## How To Continue
 
+**Before moving on the next lesson, please ensure your code builds without error. If you are having issues please refollow each step or email me (Bradley Harker) for assistance.**
+
+**To Ensure Your Code Builds:**
+
+In VSCode, open WPILib command palette by clicking on the _red circle with the letter "w" in it_ that is located in the _upper right hand side of the VSCode window_. Then click the option that says `WPILib: Build Robot Code`.
+
+If the console window says `BUILD SUCCESSFUL in Xs` where `X` is a number, then you may continue. If not, please refollow each step or email me (Bradley Harker) for assistance.
+
 In VSCode, open the command prompt/terminal (**Windows:** press `Ctrl+~` or **Mac:** `Cmd+~`).
 
 To continue the lessons, run the following command:
