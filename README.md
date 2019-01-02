@@ -83,3 +83,5 @@ cd frc-training
 git checkout lesson1
 code ./
 ```
+
+With no errors, continue [here](https://github.com/BradHacker/frc-training/tree/lesson1)
