@@ -79,5 +79,7 @@ In VSCode, open the command prompt/terminal (**Windows:** press `Ctrl+~` or **Ma
 To continue the lessons, run the following command:
 
 ```shell
-git checkout lesson3
+git checkout lesson4
 ```
+
+Then, continue [here](https://github.com/BradHacker/frc-training/tree/lesson3) (not live yet, still WIP)
