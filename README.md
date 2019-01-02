@@ -89,3 +89,5 @@ To continue the lessons, run the following command:
 ```shell
 git checkout lesson3
 ```
+
+Then, continue [here](https://github.com/BradHacker/frc-training/tree/lesson3)
