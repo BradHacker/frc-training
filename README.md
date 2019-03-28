@@ -6,15 +6,15 @@ Welcome to FRC Team 5546's Java training bootcamp. If you already have the corre
 
 | VSCode Version | WPILib Extension Version | JDK Version |
 | :------------: | :----------------------: | :---------: |
-| 1.30.1         | alpha 4                  | OpenJDK 8   |
+|     1.30.1     |         alpha 4          |  OpenJDK 8  |
 
 ## Table Of Contents
 
 1. [Prerequisites](#prerequisites)
 2. [Getting Started](#getting-started)
-    1. [Installing Java](#installing-java-openjdk-8)
-    2. [Installing VSCode](#installing-vscode)
-    3. [Installing Git](#installing-git)
+   1. [Installing Java](#installing-java-openjdk-8)
+   2. [Installing VSCode](#installing-vscode)
+   3. [Installing Git](#installing-git)
 3. [How To Continue](#how-to-continue)
 
 ## Prerequisites
@@ -25,19 +25,19 @@ Welcome to FRC Team 5546's Java training bootcamp. If you already have the corre
 
 ### Installing Java (OpenJDK 8)
 
-Go to [Oracle's Java Downloads](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) and download the **8u191** version for your operating system. *Be sure to accept the the license agreement above the download links.*
+Go to [Oracle's Java Downloads](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) and download the **8u191** version for your operating system. _Be sure to accept the the license agreement above the download links._
 
 #### Windows
 
 Run the `.exe` file that you downloaded based on your architecture (`x86` or `x64`). All of the defualt installer options should be fine.
 
-Open **Control Panel** and go to **System**. Then click on **Advanced system settings** and click the **Environment variables** button. Find the `PATH` variable under *System Variables* (most likely the bottom list) and edit it. Add the location of the `bin` folder to the path variable (*e.g. `C:/Program Files/Java/jdk1.8.0_191/bin`*).
+Open **Control Panel** and go to **System**. Then click on **Advanced system settings** and click the **Environment variables** button. Find the `PATH` variable under _System Variables_ (most likely the bottom list) and edit it. Add the location of the `bin` folder to the path variable (_e.g. `C:/Program Files/Java/jdk1.8.0_191/bin`_).
 
 **For Windows 10 users**, when editing the `PATH` variable, it may list each item in a table. If so, just add the file path to the next blank cell and hit okay.
 
-**For Windows 8/8.1 users**, when editing the `PATH` variable, it may show as one long line of text. If so, just add a `;` (*semicolon*) at the end, then put the path to the `bin` folder after.
+**For Windows 8/8.1 users**, when editing the `PATH` variable, it may show as one long line of text. If so, just add a `;` (_semicolon_) at the end, then put the path to the `bin` folder after.
 
-Add a new system variable with the name `JAVA_HOME` and the value will be the path to the java installation folder (*same as the one you added to `PATH`, but without the `/bin` on the end*).
+Add a new system variable with the name `JAVA_HOME` and the value will be the path to the java installation folder (_same as the one you added to `PATH`, but without the `/bin` on the end_).
 
 #### macOS
 
@@ -71,12 +71,17 @@ To install the WPILib Extension go to the VSCode Extensions tab and 1) click the
 
 ## How To Continue
 
-In VSCode, open the powershell/terminal (**Windows:** press `Ctrl+~` or **Mac:** `Cmd+~`).
+In VSCode, open the command prompt/terminal (**Windows:** press `Ctrl+~` or **Mac:** `^+~`).
 
 To continue the lessons, run the following commands:
 
-```bash
-cd ~
+```shell
+**Windows:** cd C:/Users/%USERNAME%/Documents
+**Mac:** cd ~
 git clone https://github.com/bradhacker/frc-training.git
+cd frc-training
 git checkout lesson1
+code ./
 ```
+
+With no errors, continue [here](https://github.com/BradHacker/frc-training/tree/lesson1)
