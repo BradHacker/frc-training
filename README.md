@@ -6,7 +6,7 @@ Welcome to FRC Team 5546's Java training bootcamp. If you already have the corre
 
 | VSCode Version | WPILib Extension Version | JDK Version |
 | :------------: | :----------------------: | :---------: |
-|     1.30.1     |         alpha 4          |  OpenJDK 8  |
+|     1.35.0     |         2019.4.1         |  OpenJDK 8  |
 
 ## Table Of Contents
 
@@ -61,7 +61,7 @@ Open the extensions tab
 
 Install the **Java Extension Pack** by Microsoft
 
-Download the [WPILib_Mac-2019.4.1.tar.gz](https://github.com/wpilibsuite/allwpilib/releases) for _macOS_ and [WPILibInstaller_Windows64-2019.4.1.zip](https://github.com/wpilibsuite/allwpilib/releases) for _Windows_ *(click on the `.vsix` file)*.
+Download the [WPILib_Mac-2019.4.1.tar.gz](https://github.com/wpilibsuite/allwpilib/releases) for _macOS_ and [WPILibInstaller_Windows64-2019.4.1.zip](https://github.com/wpilibsuite/allwpilib/releases) for _Windows_ _(click on the `.vsix` file)_.
 
 ![WPILib Alpha 4](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/763/325/original/cd12121e-c67f-43f9-93d1-f897ecb0a68d.png?1532302171)
 
