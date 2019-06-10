@@ -21,6 +21,10 @@ Welcome to FRC Team 5546's Java training bootcamp. If you already have the corre
 
 - Windows 10/8 or macOS 10.9+
 
+## Note to the reader
+
+Anytime you see `...` in code, that means there is more code that isn't shown. Also, please don't overwrite/delete code that you've already written unless explicitly told to do so!
+
 ## Getting Started
 
 ### Installing Java (OpenJDK 8)
