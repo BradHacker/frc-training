@@ -6,7 +6,7 @@ Welcome to FRC Team 5546's Java training bootcamp. If you already have the corre
 
 | VSCode Version | WPILib Extension Version | JDK Version |
 | :------------: | :----------------------: | :---------: |
-|     1.30.1     |         alpha 4          |  OpenJDK 8  |
+|     1.30.1     |         2019.4.1         |  OpenJDK 8  |
 
 ## Table Of Contents - Lesson 1
 
@@ -22,13 +22,37 @@ Welcome to FRC Team 5546's Java training bootcamp. If you already have the corre
   - OI.java
   - Robot.java
 
-## Your First Subsystem
+## Differential Drive
 
-Well, this is it, your first subsystem. Can you guess what it'll be? That's right, we will be making a `DriveTrain`. This will control the wheels via input from our two joysticks.
+A differential drive uses a left and right output to steer the robot in a setup similar to the one shown below. This is also known as "skid-steer", "tank drive", or "West Coast Drive". The Kit of Parts drivetrain is a differential drive.
 
-### DriveTrain
+![DifferentialDrive Example](https://media.screensteps.com/image_assets/assets/001/647/607/original/6ad54b99-b8e9-4ed5-9421-530b90d19e0a.jpg)
 
-Create a new file in the `subsystems` folder called `DriveTrain.java`. In it, define the `DriveTrain` class as follows:
+Lets add a `DifferentialDrive` to our `DriveTrain` class.
+
+```java
+...
+import edu.wpi.first.wpilibj.drive.DifferentialDrive;
+
+public class DriveTrain extends Subsystem {
+    ...
+    private DifferentialDrive drive;
+
+    public DriveTrain() {
+        ...
+        drive = new DifferentialDrive(left, right);
+    }
+    ...
+}
+```
+
+## Types of Steering with Differential Drive
+
+Using a differential drive offers multiple options of how to steer your robot.
+
+### Tank Drive
+
+This method uses one value to control each side of the drive train. Lets add a method for this to our `DriveTrain` calss
 
 ```java
 package frc.robot.subsystems;
@@ -37,15 +61,16 @@ import edu.wpi.first.wpilibj.command.Subsystem;
 
 public class DriveTrain extends Subsytem {
     public DriveTrain() {
+        ...
     }
 
-    @Override
-    public void initDefaultCommand() {
-    }
+    public driveTank(left, right)
+
+    ...
 }
 ```
 
-### Motor Controllers
+### Arcade Drive
 
 Now we will define some motors. But, our program can't just talk directly to our motors, so we use [motor controllers](https://wpilib.screenstepslive.com/s/currentCS/m/getting_started/l/599672-frc-control-system-hardware-overview#motor_controllers). These use [PWM](https://en.wikipedia.org/wiki/Pulse-width_modulation) to control the speed/direction of our motors. We will be using [VictorSP](https://www.vexrobotics.com/217-9090.html) motor controllers. So now we will define our left and right motor controllers:
 
@@ -79,7 +104,7 @@ In VSCode, open the command prompt/terminal (**Windows:** press `Ctrl+~` or **Ma
 To continue the lessons, run the following command:
 
 ```shell
-git checkout lesson4
+git checkout lesson5
 ```
 
 Then, continue [here](https://github.com/BradHacker/frc-training/tree/lesson3) (not live yet, still WIP)
